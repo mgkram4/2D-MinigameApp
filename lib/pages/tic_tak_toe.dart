@@ -94,7 +94,6 @@ class _TicTacToeState extends State<TicTacToe> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Tic-Tac-Toe')),
       body: GridView.builder(
         padding: EdgeInsets.all(20.0),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

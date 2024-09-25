@@ -96,7 +96,6 @@ class _WhackAMoleState extends State<WhackAMole> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Whack-a-Mole')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

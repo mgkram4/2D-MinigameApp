@@ -22,8 +22,34 @@ class DashboardPage extends StatelessWidget {
       'description': 'Pocket the balls and score points!',
       'route': '/pool-game',
     },
+    {
+      'title': 'Golf Game',
+      'description': 'Pocket the balls and score points!',
+      'route': '/golf-game',
+    },
+    {
+      'title': 'Dart Game',
+      'description': 'Throw darts and aim for the bullseye!',
+      'route': '/dart-game',
+    },
+    {
+      'title': 'Basketball',
+      'description': 'Shoot hoops and score baskets!',
+      'route': '/basketball-game',
+    },
+    {
+      'title': 'Sumo Game',
+      'description': 'Push other players out of the ring!',
+      'route': '/sumo-game',
+    },
+    {
+      'title': 'Shooter Game',
+      'description': 'Push other players out of the ring!',
+      'route': '/space-shooter',
+    },
   ];
 
+  DashboardPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +76,7 @@ class DashboardPage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
+          const Text(
             'HOME',
             style: TextStyle(
                 color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
@@ -58,7 +84,7 @@ class DashboardPage extends StatelessWidget {
           Container(
             width: 32,
             height: 32,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.yellow,
               shape: BoxShape.circle,
             ),
@@ -74,8 +100,8 @@ class DashboardPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               'GAMES',
               style: TextStyle(
@@ -88,7 +114,7 @@ class DashboardPage extends StatelessWidget {
           Expanded(
             child: GridView.builder(
               padding: EdgeInsets.symmetric(horizontal: 16),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
@@ -133,12 +159,12 @@ class DashboardPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'SHOP',
+          const Text(
+            'SHOP (COMING SOON)',
             style: TextStyle(
                 color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Row(
             children: List.generate(
               3,
@@ -150,7 +176,7 @@ class DashboardPage extends StatelessWidget {
                     color: Colors.white10,
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Icon(Icons.shopping_bag, color: Colors.white70),
                   ),
                 ),

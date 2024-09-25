@@ -98,7 +98,6 @@ class _MyHomePageState extends State<Memory> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Memory Game')),
       body: GridView.builder(
         padding: EdgeInsets.all(20.0),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
